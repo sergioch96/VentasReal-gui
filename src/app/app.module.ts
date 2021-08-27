@@ -20,6 +20,8 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JwtInterceptor } from './security/jwt.interceptor';
+import { VentaComponent } from './venta/venta.component';
+import { DialogVentaComponent } from './venta/dialog/dialogventa.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { JwtInterceptor } from './security/jwt.interceptor';
     ClienteComponent,
     DialogClienteComponent,
     DialogDeleteComponent,
-    LoginComponent
+    DialogVentaComponent,
+    LoginComponent,
+    VentaComponent
   ],
   imports: [
     BrowserModule,
